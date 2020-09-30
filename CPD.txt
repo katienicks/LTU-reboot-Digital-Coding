@@ -1,1 +1,11 @@
 
+Lesson 3 - Wednesday 30th September 2020
+
+Reflection
+
+Today we learnt how to clone our respositories from Github within a browser, onto the Github Desktop application. 
+
+I was pleased the class all learn at different rates as it makes me feel more comfortable about asking questions and repe
+When demos were repeated it gave me the opportunity to check over my work, add to my notes, or check on the dog on the baby camera! 
+
+We have also learnt how to open the project on Visual Code Studio, as well as how to search and install extensions that should help us on our coding journey. 
