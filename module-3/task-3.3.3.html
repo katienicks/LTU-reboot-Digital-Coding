@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3.3.3</title>
+</head>
+<body>
+    
+<script>
+
+function calculator( number1, number2, operator ) {
+
+switch( operator ) {
+case operator = '+':
+    var result = number1 + number2;
+    console.log( number1 + ' + ' + number2 + ' = ' + result );
+break;
+
+case operator = '-':
+    var result = number1 - number2;
+    console.log( number1 + ' - ' + number2 + ' = ' + result );
+break;
+
+case operator = '*':
+    var result = number1 * number2;
+    console.log( number1 + ' * ' + number2 + ' = ' + result );
+break;
+
+case operator = '/':
+    var result = number1 / number2;
+    console.log( number1 + ' / ' + number2 + ' = ' + result );
+break;
+
+default:
+    var result = 'Error';
+    console.log( result );
+    break;
+
+}
+
+
+}
+
+calculator( 5, 5, '+'); 
+calculator(10, 5, '-');
+calculator(10, 5, '/');
+calculator(10, 1, '*');
+
+
+</script>
+
+
+
+</body>
+</html>
