@@ -7,14 +7,11 @@
 </head>
 <body>
 
-
-
     <script>
 
+var data= [ 25, 17, 40, 63, 25, 54, 70]; //list ofrandom numbers
 
 // Mean function 
-
-var data= [ 25, 17, 40, 63, 25, 54, 70]; //list ofrandom numbers
 function mean( arr ) {
 var sum = 0;
 for( var index = 0; index < arr.length; index++ ) {
@@ -26,11 +23,35 @@ var meanOf = mean( data );
 console.log( meanOf );
 // Mean function
 
+
+
 // Median function
 
+function median( arr ) {
+
+var median = 0;
+var arrLen = arr.length; 
+//before [ 25, 17, 40, 63, 25, 54, 70 ]
+arr.sort();
+//after [ 17, 25, 25,40, 54, 63, 70 ]
+
+if ( arrLen % 2 === 0) { //is even
+    // average of 2 middle numbers 
+    median = ( arr[ arrLen / 2 -1 ]); // arr[4 ] =40
 
 
+} else { // is odd
 
+    // middle number only
+    median = arr [ ( arrLen - 1 ) / 2 ];
+}
+
+return median;
+
+}
+
+var medianOf = median( data );
+console.log( medianOf );
 
 
 
