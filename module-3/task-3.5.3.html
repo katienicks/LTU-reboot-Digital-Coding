@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3.5.3</title>
 </head>
 <body>
@@ -73,8 +73,16 @@ price:.4
 
 
 
-// 1. Create a function that takes one argument 
-function shoppingCartTotalPrice( arr ) {  
+// 1. Create a function that takes one argument, Add 2 extra arguments to the function for “discountAmount” and “type” 
+function shoppingCartTotalPrice ( arr )
+
+let foodItem = {
+    type : 'food',
+    
+}
+
+
+{  
 
 
 // 2. Create a variable inside our function called totalPrice
@@ -84,17 +92,14 @@ let totalPrice = 0;
 //remember to account for the quantity
 for ( let index = 0; index < arr.length; index++ ) {
 
-if (type:"food" ((price * 0.8) * quantity) 
+    // Replace the logic that takes off 20% for object.type == “food” for object.type == type and allow the 20% to be the {discountAmount}% 
+if (type = "food" ((price * discountAmount) * quantity) 
 
-else (price * quantity) 
-
-
-
-
-}
+//Create logic so that if type == “any” all products have a discount applied
+else (type = "any" (price * quantity) 
 
 
-    totalPrice = totalPrice + ( arr[ index ].price * arr[ index ].quantity );
+totalPrice = totalPrice + ( arr[ index ].price * arr[ index ].quantity );
 }
 
 return totalPrice.toFixed(2);
@@ -102,6 +107,16 @@ return totalPrice.toFixed(2);
 }
 
 console.log( shoppingCartTotalPrice ( shoppingCart ) );
+
+
+
+ 
+        <li> 
+
+}
+
+
+
 
 
 </script>
