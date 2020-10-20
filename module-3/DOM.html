@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+<p id="paragraph1"> Take a little walk to the edge of town
+    And go across the tracks
+    Where the viaduct looms
+    Like a bird of doom
+</p>
+
+<p class="paragraph2"> As it shifts and cracks
+    Where secrets lie in the border fires
+    In the humming wires
+    Hey man, you know
+    You're never coming back</p>
+
+<img width=500px  src="https://images.unsplash.com/photo-1517912533551-49788a90be74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2168&q=80" alt="">
+
+
+<script>
+
+var paragraph1 = document.querySelector('#paragraph1');
+// if using old style way...
+// var paragraph1 = document.getElementById();
+// query selector can use either Class or ID. old version only ID
+
+var paragraph2 = document.querySelector('.paragraph2');
+// if using old style way...
+// var paragraph2 = document.getElementsByClassName('paragraph2');
+
+
+// https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=682&q=80
+
+var image1 = document.querySelector('img');
+
+var imageSource = image1.getAttribute('src');
+
+image1.setAttribute('src', 'https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=682&q=80');
+
+</script>
+    
+</body>
+</html>
