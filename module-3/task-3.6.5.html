@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3.6.5</title>
+</head>
+<body>
+
+<input type="text">
+
+<button>Submit</button>
+
+
+<script>
+
+// 1. create a text input where the user will enter their name 
+// 2. Button that when is clicked will collect the user's name
+
+var userInput = document.querySelector('input');
+
+var button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+
+   var userName = userInput.value;
+
+   console.log( userName );
+
+});
+
+
+
+</script>
+
+    
+</body>
+</html>
